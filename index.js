@@ -1,12 +1,10 @@
-function myFunction() {
-    var greeting;
-    var time = new Date().getHours();
-    if (time < 10) {
-        greeting = "Good morning";
-    } else if (time < 20) {
-        greeting = "Good day";
-    } else {
-        greeting = "Good evening";
-    }
-    document.getElementById("demo").innerHTML = greeting;
+var today = new Date()
+var curHr = today.getHours()
+
+if (curHr < 12) {
+  console.log('good morning')
+} else if (curHr < 18) {
+  console.log('good afternoon')
+} else {
+  console.log('good evening')
 }
