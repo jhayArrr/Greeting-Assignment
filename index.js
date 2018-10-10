@@ -1,5 +1,13 @@
-let hour = 10; //Change this simulating automatically reading time from Internet Clock or System Tray Clock
-if (1, 12) console.log('Good Morning');
-else if (13, 17) console.log('Good Afternoon');
-else if (17, 24) console.console.log('Good Evening');
-else console.console.log(time);
+var myDate = new Date();
+var hrs = myDate.getHours();
+var greet;
+
+if (hrs < 12)
+    greet = 'Good Morning';
+else if (hrs >= 12 && hrs <= 17)
+    greet = 'Good Afternoon';
+else if (hrs >= 17 && hrs <= 24)
+    greet = 'Good Evening';
+
+document.getElementById('lblGreetings').innerHTML =
+    '<b>' + greet + '</b> and welcome to Encodedna.com!';
